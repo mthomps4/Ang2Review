@@ -3,9 +3,12 @@ import {BrowserModule} from "@angular/platform-browser";
 import {AppComponent} from "./app.component";
 import {FormsModule} from "@angular/forms";
 
+import{UserProfileComponent} from "./Users/userProfile.component";
+import{UserFormComponent} from "./users/userForm.component";
+
 @NgModule({
   imports: [BrowserModule, FormsModule],
-  declarations: [AppComponent],
+  declarations: [AppComponent, UserProfileComponent, UserFormComponent],
   bootstrap: [AppComponent]
 })
 

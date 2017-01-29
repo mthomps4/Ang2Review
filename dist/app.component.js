@@ -19,6 +19,9 @@ var AppComponent = (function () {
         this.activeUser = user;
         console.log(this.activeUser);
     };
+    AppComponent.prototype.onUserCreated = function (event) {
+        this.users.push(event.user);
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([

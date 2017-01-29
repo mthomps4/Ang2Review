@@ -21,15 +21,13 @@
         </li>
       </ul>
     </div>
+
+        <user-form (userCreated)="onUserCreated($event)"></user-form>
+
     </div>
 
     <div class="col-sm-8">
-        <div class="jumbotron" *ngIf="activeUser">
-           <h2>{{activeUser.name}}</h2>
-           <p>@{{activeUser.username}}</p>
-
-           <input class="form-control" [(ngModel)]="activeUser.name">
-        </div>
+        <userProfile [user]="activeUser"></userProfile>
 
         <div class="jumbotron" *ngIf="!activeUser">
           <h2> <= Choose A User </h2>

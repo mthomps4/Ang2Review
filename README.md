@@ -42,3 +42,8 @@ Extras
 - @angular/upgrade
 
 npm install @angular/core @angular/common @angular/compiler @angular/platform-browser @angular/platform-browser-dynamic @angular/forms @angular/http @angular/router @angular/upgrade --save
+
+
+### ServerJS
+- Could also use WebPack ... Angular CLI uses Webpack docs have ServerJS
+-

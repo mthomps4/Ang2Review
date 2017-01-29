@@ -24,8 +24,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: "my-app",
-        template: "\n    <header>\n      <nav class=\"navbar navbar-default\">\n        <div class=\"container-fluid\">\n        <div class=\"navbar-header\">\n          <a href=\"/\" class=\"navbar-brand\">Angular 2</a>\n        </div>\n        </div>\n      </nav>\n    </header>\n\n<main>\n<div class=\"row\">\n      <div class=\"col-sm-4\">\n        <div *ngIf=\"users\">\n          <ul class=\"list-group users-list\">\n            <li class=\"list-group-item\"\n                *ngFor=\"let user of users\"\n                (click)=\"selectUser(user)\"\n                [class.active]=\"user === activeUser\">\n              {{user.name}} (@{{user.username}})\n            </li>\n          </ul>\n        </div>\n        </div>\n\n        <div class=\"col-sm-8\">\n            <div class=\"jumbotron\" *ngIf=\"activeUser\">\n               <h2>{{activeUser.name}}</h2>\n               <p>@{{activeUser.username}}</p>\n            </div>\n\n            <div class=\"jumbotron\" *ngIf=\"!activeUser\">\n              <h2> <= Choose A User </h2>\n            </div>\n        </div>\n</div>\n</main>\n\n\n    <footer class=\"text-center\">\n      Copyright &copy; 2017;\n    </footer>\n  ",
-        styles: ["\n      .users-list li{\n        cursor: pointer;\n      }\n      .users-list li:hover, .users-list li.active{\n        background-color:#bf5a16;\n      }\n    "]
+        templateUrl: "./app/app.component.html",
+        styleUrls: ["./app/app.component.css"]
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

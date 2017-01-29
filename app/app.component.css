@@ -1,0 +1,6 @@
+.users-list li{
+  cursor: pointer;
+}
+.users-list li:hover, .users-list li.active{
+  background-color:#bf5a16;
+}
